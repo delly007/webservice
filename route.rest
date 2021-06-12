@@ -1,0 +1,40 @@
+GET http://localhost:8800/students
+
+###
+
+GET http://localhost:8800/students/60be76cc9390fc1c88e65fa0
+
+###
+
+POST http://localhost:8800/students
+Content-Type: application/json
+
+{
+    "firstname": "Stella",
+    "lastname": "Damascus",
+    "email": "stelladams@yahoo.com",
+    "phone": "07077553366",
+    "dob": "2004-01-01",
+    "gender": "F",
+    "year": 4,
+    "faculty": "Clinical Science"
+}
+
+###
+
+DELETE http://localhost:8800/students/60be76cc9390fc1c88e65fa0
+
+###
+
+PATCH http://localhost:8800/students/60bedb47affb5814147976e5
+Content-Type: application/json
+
+{
+    "firstname": "Seagal",
+    "lastname": "Daniels",
+    "email": "dannysea@yahoo.com",
+    "phone": "07077883366",
+    "dob": "2004-01-01",
+    "gender": "M",
+    "faculty": "Clinical Science"
+}
